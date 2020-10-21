@@ -1,0 +1,33 @@
+body{
+    background: url('/Assets/bg.jpg') center center no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+}
+.label-group{
+    font-size: 30px;
+    margin: 10px;
+}
+.input-group{
+    border: none;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 4px solid #d7385e;
+    font-family: 'Montserrat Alternates';
+    font-size: 90%;
+    color: white;
+}
+.input-group:focus{
+    outline: none;
+}
+@media (max-width: 600px) {
+    .form-labels{
+        display: none;
+    }
+    .form-group{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

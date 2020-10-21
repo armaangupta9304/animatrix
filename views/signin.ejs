@@ -1,0 +1,27 @@
+<%- include('./partials/_header.ejs') -%>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <%- include('./components/navbar.ejs') -%>
+    <section class="form-holder">
+        <form action="/api/v1/auth/signin" method="POST" class="form-group">
+            <div class="form-labels">
+                <label class="text-primary">Signin</label>
+                <label for="username" class="label-group text-secondary">Username</label>
+                <label for="email" class="label-group text-secondary">Email</label>
+                <label for="password" class="label-group text-secondary">Password</label>
+                
+            </div>
+            <div class="form-inputs">
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <input type="text" name="username" id="username" class="input-group" placeholder="Enter Your Username">
+                <input type="email" name="email" id="email" class="input-group" placeholder="Enter Your Email">
+                <input type="password" name="password" id="password" class="input-group" placeholder="Enter Your Password">
+                
+            </div>
+            <div class="btn-holder">
+                <button class="btns">Login</button>
+            </div>
+        </form>
+    </section>
+<%- include('./partials/_footer.ejs') -%>

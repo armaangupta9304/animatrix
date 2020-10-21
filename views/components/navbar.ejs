@@ -1,0 +1,33 @@
+<nav class="navbar-nav">
+    <a href="/api/v1/" class="navbar-brand-a">Animatrix</a>
+    <ul>
+        <li class="nav-li"><a href="/api/v1/" class="nav-a">Home</a></li>
+        <li class="nav-li"><a href="/api/v1/signin" class="nav-a">Signin</a></li>
+        <li class="nav-li"><a href="/api/v1/signup" class="nav-a">Signup</a></li>
+        <% if(isLoggedin){ %>
+            <li class="nav-li"><a href="#" class="nav-a">Chatrooms</a></li>
+            <li class="nav-li"><a href="#" class="nav-a">Feed</a></li>
+            
+        <% } %>
+    </ul>
+    <div class="nav-mobile-btn">
+        <button id="openNav">&#9776;</button>
+    </div>
+</nav>
+<div class="mobile-nav">
+    <div class="mobile-wrapper">
+        <div class="close-mobile-nav" id="closeNav">
+            &times;
+        </div>
+        <ul class="mobile-nav-ul">
+            <li class="mobile-nav-li"><a href="/api/v1/" class="mobile-nav-a">Home</a></li>
+            <li class="mobile-nav-li"><a href="/api/v1/signin" class="mobile-nav-a">Signin</a></li>
+            <li class="mobile-nav-li"><a href="/api/v1/signup" class="mobile-nav-a">Signup</a></li>
+            <% if(isLoggedin){ %>
+                <li class="mobile-nav-li"><a href="#" class="mobile-nav-a">Chatrooms</a></li>
+                <li class="mobile-nav-li"><a href="#" class="mobile-nav-a">Feed</a></li>
+                
+            <% } %>
+        </ul>
+    </div>
+</div>

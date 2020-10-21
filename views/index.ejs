@@ -1,0 +1,38 @@
+<%- include('./partials/_header.ejs') -%>
+    <link rel="stylesheet" href="/css/card-section.css">
+</head>
+<body>
+    <%- include('./components/navbar.ejs') -%>
+    <section class="home-section">
+        <div class="info">
+            <h1 class="text-primary">Animatrix</h1>
+            <hr>
+            <h4 class="text-secondary">A Place For You All Weebs!</h4>
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="text-holder">
+            <h1 class="text-primary" style="margin: 10px 0;">Q. What is Animatrix?</h1>
+            <hr>
+            <h4 class="text-secondary">Animatrix is a great place to hangout if you are a otaku/anime fan! the people here are really friendly and you will have a really great time here</h4>
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="text-holder">
+            <h1 class="text-primary" style="margin: 10px 0;">Features?</h1>
+            <hr>
+            <h4 class="text-secondary">You can chat with other users, You can post your creativity and compete in annual challenges, you have to level up so that you can compete with others as well! and a lot more fun stuffs!</h4>
+        </div>
+    </section>
+    <section class="main-section">
+        <div class="text-holder">
+            <h1 class="text-primary" style="margin: 10px 0;">So What Are You Waiting For?</h1>
+            <hr>
+            <h4 class="text-secondary">You can signup real quick and its free</h4>
+            <div class="btn-holder" style="margin-top: 10px;">
+                <a class="btns" href="/api/v1/signup">Signup</a>
+                <a class="btns" href="/api/v1/login">Login</a>
+            </div>
+        </div>
+    </section>
+<%- include('./partials/_footer.ejs') -%>

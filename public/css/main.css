@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    position: relative;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navbar-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.navbar-nav ul li{
+    margin: 0 0 0 30px;
+    padding: 20px;
+    font-family: 'Montserrat Alternates';
+}
+.navbar-nav a{
+    text-decoration: none;
+    
+}
+.nav-a{
+    color: white;
+    transition: all 0.3s ease-in;
+}
+.navbar-brand-a{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.text-primary{
+    color: white;
+    font-family: 'Dancing Script';
+    text-align: center;
+    font-size: 40px;
+}
+.text-secondary{
+    color: white;
+    font-family: 'Montserrat Alternates';
+    font-size: 1.4rem;
+}
+.nav-a:hover{
+    color: #d7385e;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.nav-mobile-btn{
+    display: none;
+}
+.nav-mobile-btn button {
+    font-size: 40px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.mobile-nav{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: animateHam 0.3s linear;
+}
+.mobiloe-nav-a{
+    color: white;
+}
+.mobile-nav-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+}
+.mobile-nav-ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat Alternates';
+    font-size: 50px;
+    position: relative;
+    transition: color 0.5s ease;
+}
+.mobile-nav-ul li a:hover{
+    color: #d7385e;
+}
+.close-mobile-nav{
+    color: white;
+    font-size: 140px;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+.close-mobile-nav:hover{
+    color: #d7385e;
+}
+.mobile-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    height: 100vh;
+    width: 100%;
+}
+#closeNav{
+    cursor: pointer;
+}
+.text-holder{
+    max-width: 80%;
+}
+.btn-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btns{
+    outline: none;
+    background-color: transparent;
+    border: 4px solid #d7385e;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat Alternates';
+    cursor: pointer;
+    font-size: 30px;
+    margin: 10px;
+    transition: 0.3s;
+}
+.btns:hover{
+    background-color: #d7385e;
+    color: black;
+}
+.form-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.label-group{
+    margin-right: 10px;
+}
+.form-labels{
+    display: flex;
+    flex-direction: column;
+}
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 800px){
+    .navbar-nav ul{
+        display: none;
+    }
+    .nav-mobile-btn{
+        display: block;
+    }
+}
+@keyframes animateHam {
+    0% {
+        width: 0vw;
+    }
+    100% {
+        width: 100vw;
+    }
+}
